@@ -15,7 +15,7 @@ namespace Persistence
 	{
 		public static void AddPersistenceServices(this IServiceCollection services)
 		{
-			services.AddDbContext<APIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString);
+			services.AddDbContext<APIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
 			services.AddScoped<ICustomerReadRepository,CustomerReadRepository>();
 			services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
 			services.AddScoped<IOrderReadRepository, OrderReadRepository>();
