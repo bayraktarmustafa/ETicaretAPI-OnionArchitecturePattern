@@ -14,7 +14,7 @@ namespace Application.Repositories
 
 		bool Remove(T entity);
 
-		Task<bool> Remove(string id);
+		Task<bool> RemoveAsync(string id);
 
 		bool RemoveRange(List<T> entities);
 
